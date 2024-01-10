@@ -15,7 +15,7 @@
     [user@sahara ~/lecture1]$
 
 * When the command was run, the home directory was the working directory.
-* cd with a path to a directory as an argument changes the working directory into the directory in the argument.
+* cd with a path to a directory as an argument changes the working directory into the directory given in the argument.
 * This output is not an error.
 
 ### Path to a file as an argument
@@ -26,3 +26,29 @@
 * When the command was run, the home directory was the working directory.
 * cd with a path to a file as an argument doesn't change the working directory and prints an error message.
 * This output is an error because cd cannot take in a file as an argument.
+
+## ls
+
+### No arguments
+    [user@sahara ~]$ ls
+    lecture1
+
+* When the command was run, the home directory was the working directory.
+* ls with no arguments prints the files and directories in the working directory.
+* This output is not an error.
+
+### Path to a directory as an argument
+    [user@sahara ~]$ ls lecture1/
+    Hello.class  Hello.java  messages  README
+
+* When the command was run, the home directory was the working directory.
+* ls with a path to a directory as an argument prints the files and directories in the directory given in the argument.
+* This output is not an error.
+
+### Path to a file as an argument
+    [user@sahara ~]$ ls lecture1/Hello.java 
+    lecture1/Hello.java
+
+* When the command was run, the home directory was the working directory.
+* ls with a file to a directory as an argument prints the argument.
+* This output is not an error.
