@@ -46,13 +46,13 @@
 	}
 
 ### Two screenshots of /add-message
-![image](screenshot1.png)
+<img src="https://raw.githubusercontent.com/yscmark/cse15l-lab-reports/main/lab2/screenshot1.png" width=50% height=50%>
 
 * The method that was called is handleRequest.
 * The relevant argument of handleRequest is `new URI("http://localhost:4000/add-message?s=hi&user=mark)`. The `ArrayList<String> messageLog` field was updated to include the added message (`mark: hi`).
 * The value of `messageLog` is updated because of the path and queries in the URL. The method takes the path and queries and creates a single string equal to the message (`mark: hi`). This string is added to the `messageLog` ArrayList.
 
-![image](screenshot2.png)
+<img src="screenshot2.png" width=50% height=50%>
 
 * The method that was called is handleRequest.
 * The relevant argument of handleRequest is `new URI("http://localhost:4000/add-message?s=how are you&user=mark)`. The `ArrayList<String> messageLog` field was updated to include the added message (`mark: how are you`).
@@ -61,13 +61,13 @@
 ## Part 2
 
 ### Absolute path to the private key
-![image](screenshot5.png)
+<img src="screenshot5.png" width=50% height=50%>
 
 ### Absolute path to the public key
-![image](screenshot4.png)
+<img src="screenshot4.png" width=50% height=50%>
 
 ### Logging into `ieng6` account without being asked for a password
-![image](screenshot3.png)
+<img src="screenshot3.png" width=50% height=50%>
 
 ## Part 3
 In lab 3, I learned how to code a request handling method that processes queries in the URL. I also learned about the `scp` command.
