@@ -47,7 +47,6 @@
 
 ### Two screenshots of /add-message
 ![image](screenshot1.png)
-<img src="https://raw.githubusercontent.com/yscmark/cse15l-lab-reports/main/lab2/screenshot1.png" width=50% height=50%>
 
 * The method that was called is handleRequest.
 * The relevant argument of handleRequest is `new URI("http://localhost:4000/add-message?s=hi&user=mark)`. The `ArrayList<String> messageLog` field was updated to include the added message (`mark: hi`).
