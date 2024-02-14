@@ -23,21 +23,21 @@
 
 ### Bug before
 	static int[] reversed(int[] arr) {
-    	int[] newArray = new int[arr.length];
-    	for(int i = 0; i < arr.length; i += 1) {
+		int[] newArray = new int[arr.length];
+		for(int i = 0; i < arr.length; i += 1) {
 			arr[i] = newArray[arr.length - i - 1];
-    	}
+		}
 		return arr;
-  	}
+	}
 
 ### Bug after
 	static int[] reversed(int[] arr) {
-    	int[] newArray = new int[arr.length];
-    	for(int i = 0; i < arr.length; i += 1) {
+		int[] newArray = new int[arr.length];
+		for(int i = 0; i < arr.length; i += 1) {
 			newArray[arr.length - i - 1] = arr[i];
-    	}
+		}
 		return newArray;
-  	}
+	}
 
 The method before the fix assigned the elements of the input array to the elements of the newly initialized array and returns the input array. This makes all of the elements in the input array null. The method after assigns the elements of the newly initialized array to the elements of the input array (in reverse order) and returns the newly initialized array.
 
