@@ -24,9 +24,9 @@ Using tab completion, I made lab7 the working directory. Also using tab completi
 ## Step 7
 ![image](step7.png)
 
-Keys pressed: vim`<space>`L`<tab>`.`<tab><enter>`
+Keys pressed: vim`<space>`L`<tab>`.`<tab><enter>` L `<up><up><up><up><up><up>` e i 2 :x
 
-Using tab completion, I opened `ListExamples.java` in vim.
+Using tab completion, I opened `ListExamples.java` in vim. Capital L was used to move to the bottom of the screen. Up arrow was pressed 6 times to get to the correct line. `e` jumps to the end of the word, and `i 2` replaces the 1 in `index1` to 2. `:x` saves and quits the file.
 
 ## Step 8
 ![image](step8.png)
@@ -40,4 +40,4 @@ I used the up arrow to access the `bash test.sh` command again.
 
 Keys pressed: git`<space>`add`<space>`L`<tab>`.`<tab><enter>`, git`<space>`commit`<space>`-m`<space>`"fix`<space>`merge`<space>`method"`<enter>`, git`<space>`push`<space>`origin`<space>`main
 
-I ran the commands to commit the changes made to `ListExamples.java` GitHub.
+I ran the commands to commit, stage, and push the changes made to `ListExamples.java` GitHub.
